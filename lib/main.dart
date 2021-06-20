@@ -167,7 +167,8 @@ class _MyAppState extends State<MyApp> {
                                           Text(
                                             DateFormat('dd-MM-yyyy')
                                                 .add_jm()
-                                                .format(DateTime.now()),
+                                                .format(
+                                                    expense[index].createdTime),
                                             style: TextStyle(
                                                 fontSize: 18,
                                                 color: Colors.white),
